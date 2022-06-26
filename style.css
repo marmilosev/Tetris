@@ -1,0 +1,92 @@
+.container{
+  display: flex;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid;
+}
+
+.grid div{
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino{
+  background-color: blue;
+}
+
+.mini-grid{
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0.2px solid;
+  align-content: center;
+}
+
+.mini-grid div{
+  height: 20px;
+  width: 20px;
+}
+
+
+@media (max-width: 480px){
+  section {grid-area: a}
+  .container {grid-area: b}
+  footer {grid-area: c}
+
+  body{
+    display: grid;
+    grid-template-areas:
+    "a a"
+    "b b"
+    "c c";
+    justify-content: center;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 1024px){
+  section {grid-area: a}
+  .container {grid-area: b}
+  footer {grid-area: c}
+
+  body{
+    display: grid;
+    grid-template-areas:
+    "a a"
+    "b b"
+    "c c";
+    justify-content: center;
+  }
+
+}
+
+@media (min-width: 1025px){
+  section {grid-area: a}
+  .grid {grid-area: b}
+  .mini-grid {grid-area: c}
+  footer {grid-area: d}
+
+  body{
+    display: grid;
+    grid-template-areas:
+    "a a a"
+    "b b c"
+    "b b d"
+    "b b d";
+    justify-content: center;
+  }
+
+  h4{
+    position: relative;
+    top: -300px;
+    right: 80px;
+  }
+
+}
