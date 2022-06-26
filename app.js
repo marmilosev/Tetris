@@ -209,13 +209,13 @@ document.addEventListener('DOMContentLoaded', () => {
       highScore()
     }
   }
-  console.log(displayShape())
-  console.log(freeze())
-  console.log(moveDown())
+  // console.log(displayShape())
+  // console.log(freeze())
+  // console.log(moveDown())
 
   function highScore () {
-    console.log(score)
-    console.log(window.localStorage.getItem('superHighScore'))
+    // console.log(score)
+    // console.log(window.localStorage.getItem('superHighScore'))
     if (score > window.localStorage.getItem('superHighScore')) {
       window.localStorage.setItem('superHighScore', score)
     }
